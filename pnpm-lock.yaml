@@ -23,9 +23,12 @@ dependencies:
   eslint-config-next:
     specifier: 13.4.13
     version: 13.4.13(eslint@8.46.0)(typescript@5.1.6)
+  font-awesome:
+    specifier: ~4.2.0
+    version: 4.2.0
   next:
     specifier: 13.4.13
-    version: 13.4.13(react-dom@18.2.0)(react@18.2.0)
+    version: 13.4.13(react-dom@18.2.0)(react@18.2.0)(sass@1.64.2)
   postcss:
     specifier: 8.4.27
     version: 8.4.27
@@ -35,6 +38,9 @@ dependencies:
   react-dom:
     specifier: 18.2.0
     version: 18.2.0(react@18.2.0)
+  sass:
+    specifier: ^1.64.2
+    version: 1.64.2
   tailwindcss:
     specifier: 3.3.3
     version: 3.3.3
@@ -1254,6 +1260,11 @@ packages:
     resolution: {integrity: sha512-5nqDSxl8nn5BSNxyR3n4I6eDmbolI6WT+QqR547RwxQapgjQBmtktdP+HTBb/a/zLsbzERTONyUB5pefh5TtjQ==}
     dev: false
 
+  /font-awesome@4.2.0:
+    resolution: {integrity: sha512-yoOCPGLbv964axJdUK33nd53Ihad4QcQB2Ebj2YodZZUDYb3qBtP4L5MvGxWKdVmiOe0ZdeBWwEXth5tpBz4LQ==}
+    engines: {node: '>=0.10.3'}
+    dev: false
+
   /for-each@0.3.3:
     resolution: {integrity: sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==}
     dependencies:
@@ -1476,6 +1487,10 @@ packages:
   /ignore@5.2.4:
     resolution: {integrity: sha512-MAb38BcSbH0eHNBxn7ql2NH/kX33OkB3lZ1BNdh7ENeRChHTYsTvWrMubiIAMNS2llXEEgZ1MUOBtXChP3kaFQ==}
     engines: {node: '>= 4'}
+    dev: false
+
+  /immutable@4.3.2:
+    resolution: {integrity: sha512-oGXzbEDem9OOpDWZu88jGiYCvIsLHMvGw+8OXlpsvTFvIQplQbjg1B1cvKg8f7Hoch6+NGjpPsH1Fr+Mc2D1aA==}
     dev: false
 
   /import-fresh@3.3.0:
@@ -1834,7 +1849,7 @@ packages:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
     dev: false
 
-  /next@13.4.13(react-dom@18.2.0)(react@18.2.0):
+  /next@13.4.13(react-dom@18.2.0)(react@18.2.0)(sass@1.64.2):
     resolution: {integrity: sha512-A3YVbVDNeXLhWsZ8Nf6IkxmNlmTNz0yVg186NJ97tGZqPDdPzTrHotJ+A1cuJm2XfuWPrKOUZILl5iBQkIf8Jw==}
     engines: {node: '>=16.8.0'}
     hasBin: true
@@ -1856,6 +1871,7 @@ packages:
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+      sass: 1.64.2
       styled-jsx: 5.1.1(react@18.2.0)
       watchpack: 2.4.0
       zod: 3.21.4
@@ -2301,6 +2317,16 @@ packages:
       call-bind: 1.0.2
       get-intrinsic: 1.2.1
       is-regex: 1.1.4
+    dev: false
+
+  /sass@1.64.2:
+    resolution: {integrity: sha512-TnDlfc+CRnUAgLO9D8cQLFu/GIjJIzJCGkE7o4ekIGQOH7T3GetiRR/PsTWJUHhkzcSPrARkPI+gNWn5alCzDg==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 3.5.3
+      immutable: 4.3.2
+      source-map-js: 1.0.2
     dev: false
 
   /scheduler@0.23.0:
